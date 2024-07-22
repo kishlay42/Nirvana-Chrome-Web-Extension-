@@ -1,0 +1,37 @@
+# Ignore compiled object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Ignore executables
+*.exe
+*.out
+*.app
+
+# Ignore libraries
+*.a
+*.lib
+
+# Ignore log files
+*.log
+
+# Ignore package files
+*.zip
+*.tar
+*.gz
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp

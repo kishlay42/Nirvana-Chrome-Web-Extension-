@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Nirvana (shop green)",
+    "version": "1.0",
+    "description": "shop green"
+    ,
+    "icons": {
+    "16": "img/eco-friendly-16.png",
+    "32": "img/eco-friendly-32.png",
+    "48": "img/eco-friendly-64.png",
+    "128": "img/eco-friendly-128.png"
+  },
+    "action":{
+        "default_popup": "popup.html"
+    },
+    "host_permissions": [
+    "<all_urls>"
+  ]
+}
