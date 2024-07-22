@@ -3,6 +3,8 @@
 *.ko
 *.obj
 *.elf
+.env
+
 
 # Ignore executables
 *.exe
@@ -26,6 +28,7 @@
 .idea/
 *.sublime-project
 *.sublime-workspace
+node_modules/
 
 # Ignore system files
 .DS_Store
