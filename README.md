@@ -4,6 +4,9 @@
 
 Nirvana is a Google Chrome extension designed to enhance your daily online shopping experience by suggesting eco-friendly alternative products. Our goal is to help you and your body achieve true nirvana by promoting sustainable shopping habits.
 
+## Video Preview
+https://github.com/user-attachments/assets/09598e53-b7df-4959-8254-c9b30a6ba390
+
 ## Tech Stack
 
 - HTML
@@ -48,9 +51,14 @@ We welcome contributions! If you would like to contribute to the project, please
 
 Thank you for choosing Nirvana and joining us on the journey to sustainable living!
 
+
+
+
 ## Add Your SerpAPI Key:
 - Sign up on SerpAPI to get your API key.
 - Open the `config.js` file in the cloned directory.
 - Add your SerpAPI key:
   ```javascript
   const serpApiKey = 'YOUR_SERPAPI_KEY';
+
+  
