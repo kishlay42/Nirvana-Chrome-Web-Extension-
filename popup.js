@@ -2,7 +2,6 @@
   const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
   const productList = document.getElementById("product-list");
   const loadingSpinner = document.getElementById("loading-spinner");
-
   if (tabs.length > 0) {
     const activeTab = tabs[0];
     const title = activeTab.title
@@ -10,7 +9,7 @@
       : "no product";
     // document.querySelector(".title").textContent = title;//to add etail of product on webpage
     console.log("Active tab title:", title);
-    const apiUrl = `https://serpapi.com/search.json?engine=google_shopping&q=${title}+ecofriendly&gl=in&api_key=${SERP_KEY}`;
+    const apiUrl = `https://serpapi.com/search.json?engine=google_shopping&q=${title}+ecofriendly&gl=in&api_key=494950431c96f2da0fdb788c7cc4cc1f67599ecb34052882efe3757716d7f198`;
 
     document.addEventListener("DOMContentLoaded", (event) => {
       // const titleElement = document.querySelector(".title");
@@ -44,10 +43,18 @@
               shopButton.target = "_blank"; // This ensures the link opens in a new tab
               shopButton.textContent = "Shop Now";
 
+              const heartButton = document.createElement("span");
+              heartButton.className = "heart-button";
+              heartButton.innerHTML = "&#9829;"; // Unicode for heart symbol
+              heartButton.addEventListener("click", () => {
+                heartButton.classList.toggle("active");
+              });
+
               productDiv.appendChild(productName);
               productDiv.appendChild(productPrice);
               productDiv.appendChild(productImage);
               productDiv.appendChild(shopButton);
+              productDiv.appendChild(heartButton);
 
               productList.appendChild(productDiv);
             });

@@ -8,34 +8,54 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
 
+        html {
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+        }
+
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            /* background-color: #75A488; */
             margin: 0;
-            padding: 20px;
+            /* padding: 20px; */
         }
+
+
 
         .gradient-heading {
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             font-size: 4.5em;
             font-weight: bold;
-            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            background: linear-gradient(90deg, #eeecc5, #bdfec3);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            margin: 20px 0;
+            padding-top: 20px;
+            padding-bottom: 8px;
         }
 
         h1 {
             text-align: center;
-            color: #4f4d4d;
+            color: #f9f6f6;
         }
 
         #product-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            padding-bottom: 10px;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+
+        }
+
+        #product-list::-webkit-scrollbar {
+            display: none;
         }
 
         .product {
@@ -78,7 +98,7 @@
             display: inline-block;
             margin-top: 10px;
             padding: 10px 20px;
-            background-color: #28a745;
+            background-color: #75A488;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -119,7 +139,7 @@
             left: 50%;
             /* bottom: 50%; */
             margin-top: 60%;
-            
+
             transform: translate(-50%, -50%);
 
         }
@@ -149,15 +169,30 @@
                 transform: scale(1);
             }
         }
+
+        .heart-button {
+            display: inline-block;
+            margin-left: 30px;
+            font-size: 2.7em;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .heart-button.active {
+            color: #75A488;
+        }
     </style>
 </head>
 
 <body>
-
-    <div class="gradient-heading">Nirvana</div>
-    <!-- <p class="title"></p> name of product we are searching alternative for  -->
-    <hr>
-    <h1>Product List</h1>
+    <div style="background-color: #75A488; padding-bottom: 5px; 
+">
+        <div class="gradient-heading">Nirvana</div>
+        <!-- <p class="title"></p> name of product we are searching alternative for  -->
+        <hr>
+        <h1>Eco Products</h1>
+    </div>
     <div id="loading-spinner">
         <!-- <div class="spinner"></div> -->
         <svg x="0" y="0" width="258" height="258">
@@ -259,8 +294,8 @@
         <svg>
             <defs>
                 <linearGradient id="treeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:rgb(253, 110, 0);stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:rgb(244, 32, 113);stop-opacity:1" />
+                    <stop offset="0%" style="stop-color:rgb(76, 253, 0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(241, 244, 32);stop-opacity:1" />
                 </linearGradient>
             </defs>
         </svg>
