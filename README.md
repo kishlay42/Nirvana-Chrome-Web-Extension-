@@ -5,7 +5,7 @@
 Nirvana is a Google Chrome extension designed to enhance your daily online shopping experience by suggesting eco-friendly alternative products. Our goal is to help you and your body achieve true nirvana by promoting sustainable shopping habits.
 
 ## Video Preview
-https://github.com/user-attachments/assets/09598e53-b7df-4959-8254-c9b30a6ba390
+https://github.com/user-attachments/assets/a3116a4c-7731-4566-b781-220f7f100e8a
 
 ## Tech Stack
 
