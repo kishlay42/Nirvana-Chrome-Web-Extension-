@@ -9,7 +9,7 @@
       : "no product";
     // document.querySelector(".title").textContent = title;//to add etail of product on webpage
     console.log("Active tab title:", title);
-    const apiUrl = `https://serpapi.com/search.json?engine=google_shopping&q=${title}+ecofriendly&gl=in&api_key=494950431c96f2da0fdb788c7cc4cc1f67599ecb34052882efe3757716d7f198`;
+    const apiUrl = `https://serpapi.com/search.json?engine=google_shopping&q=${title}+ecofriendly&gl=in&api_key=Your_api_key_here`; // Replace with your actual API key
 
     document.addEventListener("DOMContentLoaded", (event) => {
       // const titleElement = document.querySelector(".title");
@@ -39,7 +39,7 @@
 
               const shopButton = document.createElement("a");
               shopButton.className = "shop-button";
-              shopButton.href = product.link; // Assuming the API returns a 'link' field for the product URL
+              shopButton.href = product.product_link;  // Assuming the API returns a 'link' field for the product URL
               shopButton.target = "_blank"; // This ensures the link opens in a new tab
               shopButton.textContent = "Shop Now";
 

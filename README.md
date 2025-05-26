@@ -24,6 +24,12 @@ To get started with Nirvana, you need to clone the repository from GitHub. Follo
 git clone https://github.com/kishlay42/Nirvana-Chrome-Web-Extension-.git
 ```
 
+## Add Your SerpAPI Key (Required!)
+
+To keep your API key secure and **avoid committing it to GitHub**:
+
+
+1. **put your api key in `popup.js` you will find apiurl edit it.**
 
 ## Setting Up the Extension
 To set up the Nirvana extension in your Chrome browser, follow these steps:
